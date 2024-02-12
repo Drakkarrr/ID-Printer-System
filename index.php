@@ -322,20 +322,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </table>
         </div>
         <hr>
-        <a href="https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw" type="button"
-            class="btn btn-primary btn-lg btn-block" target="_blank">Please Like And Subscribe</a>
-
-        <div style="padding-top: 10px;">
-            <marquee onMouseOver="this.stop()" onMouseOut="this.start()"> <a
-                    href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> is the sole owner of this
-                script. It is not suitable for personal use. And releasing it in demo version. Besides, it is being
-                provided for free only from <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a>. For
-                any of your problems contact us on <a href="https://www.youtube.com/@codecampbdofficial">Code Camp
-                    BD</a> facebook group / page or message <a href="https://www.facebook.com/dev.mhrony">MH RONY</a> on
-                facebook. Thanks for staying with <a href="https://www.youtube.com/@codecampbdofficial">Code Camp
-                    BD</a>.</marquee>
-        </div>
-
+      
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
