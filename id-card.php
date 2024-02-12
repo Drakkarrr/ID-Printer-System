@@ -95,14 +95,7 @@ if (isset($_POST['search'])) {
 }
 
 ?>
-<!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
 <!doctype html>
 <html lang="en">
 
@@ -118,27 +111,13 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
     <link rel="stylesheet" href="css/dashboard.css">
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
     <title>Card Generation | Code Camp BD <?php echo date("Y") ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
-    <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
 
 
     <style>
@@ -170,7 +149,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
         margin-top: -5px;
     }
 
-   
+
     .container {
         width: 80vh;
         height: 45vh;
@@ -260,7 +239,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
         margin: 8px 0px 8px 30px;
     }
 
-   
+
     .box-3 img {
         width: 8vh;
     }
@@ -346,7 +325,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
         height: 5vh;
     }
 
-   
+
     .email h4 {
         color: rgb(90 139 249);
         font-size: 15px;
@@ -384,14 +363,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
 </head>
 
 <body>
-    <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
     <!-- Navigation bar start  -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: black;">
         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="50px"></a>
@@ -415,14 +387,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
             </form>
         </div>
     </nav>
-    <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
     <!-- Navigation bar end  -->
     <div style="padding-top: 10px;">
         <marquee onMouseOver="this.stop()" onMouseOut="this.start()"> <a
@@ -460,14 +425,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
                     <?php echo $html ?>
                 </div>
                 <br>
-                <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/ -->
+
             </div>
         </div>
 
@@ -504,7 +462,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
 
         }
 
-       
+
 
         function downloadURI(uri, name) {
             var link = document.createElement("a");
