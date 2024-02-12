@@ -149,14 +149,7 @@ if (isset($_POST['search'])) {
         margin-top: -5px;
     }
 
-    /* <!-- /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
- */
+   
     .container {
         width: 80vh;
         height: 45vh;
@@ -246,14 +239,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
         margin: 8px 0px 8px 30px;
     }
 
-    /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/
+   
     .box-3 img {
         width: 8vh;
     }
@@ -339,14 +325,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
         height: 5vh;
     }
 
-    /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/
+   
     .email h4 {
         color: rgb(90 139 249);
         font-size: 15px;
@@ -483,14 +462,7 @@ for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@
 
         }
 
-        /*!
-* Author Name: MH RONY.
-* GigHub Link: https://github.com/dev-mhrony
-* Facebook Link:https://www.facebook.com/dev.mhrony
-* Youtube Link: https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw
-for any PHP, Laravel, Python, Dart, Flutter work contact me at developer.mhrony@gmail.com
-* Visit My Website : developerrony.com
-*/
+       
 
         function downloadURI(uri, name) {
             var link = document.createElement("a");
