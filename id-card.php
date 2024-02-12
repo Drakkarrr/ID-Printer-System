@@ -389,25 +389,17 @@ if (isset($_POST['search'])) {
     </nav>
 
     <!-- Navigation bar end  -->
-    <div style="padding-top: 10px;">
-        <marquee onMouseOver="this.stop()" onMouseOut="this.start()"> <a
-                href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> is the sole owner of this script. It
-            is not suitable for personal use. And releasing it in demo version. Besides, it is being provided for free
-            only from <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a>. For any of your problems
-            contact us on <a href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a> facebook group / page
-            or message <a href="https://www.facebook.com/dev.mhrony">MH RONY</a> on facebook. Thanks for staying with <a
-                href="https://www.youtube.com/@codecampbdofficial">Code Camp BD</a>.</marquee>
-    </div>
+   
     <br>
 
     <div class="row" style="margin: 0px 20px 5px 20px">
         <div class="col-sm-6">
             <div class="card jumbotron">
                 <div class="card-body">
-                    <form class="form" method="POST" action="id-card.php">.
-                        <label for="exampleInputEmail1">Student Id Card No.</label>
-                        <input class="form-control mr-sm-2" type="search" placeholder="Enter Id Card No." name="id_no">
-                        <small id="emailHelp" class="form-text text-muted">Every student's should have unique Id
+                    <form class="form" method="POST" action="id-card.php">
+                        <label for="exampleInputEmail1">Employee Id Card No.</label>
+                        <input class="form-control mr-sm-2" type="search" placeholder="Enter ID Card No." name="id_no">
+                        <small id="emailHelp" class="form-text text-muted">Every employee should have unique Id
                             no.</small>
                         <br>
                         <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"
