@@ -149,7 +149,7 @@ if (isset($_POST['search'])) {
         margin-top: -5px;
     }
 
-   
+
     .container {
         width: 80vh;
         height: 45vh;
@@ -239,7 +239,7 @@ if (isset($_POST['search'])) {
         margin: 8px 0px 8px 30px;
     }
 
-   
+
     .box-3 img {
         width: 8vh;
     }
@@ -325,7 +325,7 @@ if (isset($_POST['search'])) {
         height: 5vh;
     }
 
-   
+
     .email h4 {
         color: rgb(90 139 249);
         font-size: 15px;
@@ -462,7 +462,7 @@ if (isset($_POST['search'])) {
 
         }
 
-       
+
 
         function downloadURI(uri, name) {
             var link = document.createElement("a");
