@@ -96,7 +96,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>Add New Student</title>
+    <title>ID Printer</title>
 
 </head>
 
@@ -118,7 +118,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <div class="modal-body">
                         <input type="hidden" name="snoEdit" id="snoEdit">
                         <div class="form-group">
-                            <label for="name">Student Name</label>
+                            <label for="name">Employee Name</label>
                             <input type="text" class="form-control" id="nameEdit" name="nameEdit">
                         </div>
 
@@ -215,7 +215,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>";
   }
   ?>
-
+    
     <div class="container my-4">
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample">
@@ -231,12 +231,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <form method="POST" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputCity">Student Name</label>
+                            <label for="inputCity">Employee Name</label>
                             <input type="text" name="name" class="form-control" id="inputCity">
                         </div>
 
                         <div class="form-group col-md-4">
-                            <label for="inputState">Class / Grade</label>
+                            <label for="inputState">Position / Role</label>
                             <select name="grade" class="form-control">
                                 <option selected>Choose...</option>
                                 <option value="1st">1st</option>
@@ -264,7 +264,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <input type="text" name="email" class="form-control">
                         </div>
                         <div class="form-group col-md-2">
-                            <label for="inputZip">Expire Date</label>
+                            <label for="inputZip">Signature [WIP]</label>
                             <input type="date" name="exp_date" class="form-control">
                         </div>
                     </div>
@@ -294,7 +294,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <table class="table" id="myTable">
                 <thead>
                     <tr>
-                        <th scope="col">S.No</th>
+                        <th scope="col">E.No</th>
                         <th scope="col">Name</th>
                         <th scope="col">ID Card No.</th>
                         <th scope="col">Actions</th>
@@ -322,6 +322,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </table>
         </div>
         <hr>
+        <a href="https://www.youtube.com/channel/UChYhUxkwDNialcxj-OFRcDw" type="button"
+            class="btn btn-primary btn-lg btn-block" target="_blank">Please Like And Subscribe</a>
 
         <div style="padding-top: 10px;">
             <marquee onMouseOver="this.stop()" onMouseOut="this.start()"> <a
