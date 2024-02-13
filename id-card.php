@@ -377,9 +377,9 @@ if (isset($_POST['search'])) {
                 <li class="nav-item active">
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="id-card.php">ID Genarator</a>
-                </li>
+                </li> -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -389,7 +389,7 @@ if (isset($_POST['search'])) {
     </nav>
 
     <!-- Navigation bar end  -->
-   
+
     <br>
 
     <div class="row" style="margin: 0px 20px 5px 20px">
