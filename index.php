@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result) {
       $update = true;
     } else {
-      echo "We could not update the record successfully";
+      echo "Record was not updated successfully";
     }
   } else {
     $name = $_POST["name"];
@@ -65,7 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         // Sql query to be executed
         $sql = "INSERT INTO `cards`(`name`, `id_no`, `email`, `phone`, `address`, `dob`, `exp_date`, `image`) VALUES ('$name','$id_no','$email]','$phone','$address','$dob','$exp_date','$uploadfile')";
 
-        // $sql = "INSERT INTO `cards` (`name`, `id_no`) VALUES ('$name', '$id_no')";
         $result = mysqli_query($conn, $sql);
 
 
@@ -74,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         if ($result) {
           $insert = true;
         } else {
-          echo "The record was not inserted successfully because of this error ---> " . mysqli_error($conn);
+          echo "The record was not inserted successfully" . mysqli_error($conn);
         }
       }
     }
@@ -96,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>Home</title>
+    <title>ID Card Printer</title>
 
 </head>
 
@@ -109,7 +108,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Edit This Card</h5>
+                    <h5 class="modal-title" id="editModalLabel">Edit Card</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -149,9 +148,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="id-card.php">ID Card Genarator</a>
-                </li>
+                </li> -->
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -215,7 +214,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>";
   }
   ?>
-    
+
     <div class="container my-4">
         <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
             aria-expanded="false" aria-controls="collapseExample">
@@ -322,7 +321,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </table>
         </div>
         <hr>
-      
+
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
