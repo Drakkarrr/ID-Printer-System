@@ -76,7 +76,7 @@ if (isset($_POST['search'])) {
                                                   <div class='info-3'>
                                                       <div class='email'>
                                                           <h4>Address</h4>
-                                                          <p>$address this is the final long address</p>
+                                                          <p>$address</p>
                                                       </div>
                                                       
                                                   </div>
@@ -112,7 +112,7 @@ if (isset($_POST['search'])) {
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <title>Card Generation | Code Camp BD <?php echo date("Y") ?></title>
+    <title>ID Printer <?php echo date("Y") ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
@@ -381,10 +381,10 @@ if (isset($_POST['search'])) {
                     <a class="nav-link" href="id-card.php">ID Genarator</a>
                 </li> -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -422,7 +422,7 @@ if (isset($_POST['search'])) {
         </div>
 
         <hr>
-        <button id="demo" class="downloadtable btn btn-primary" onclick="downloadtable()"> Download Id Card</button>
+        <button id="demo" class="downloadtable btn btn-primary" onclick="downloadtable()"> Print Id Card</button>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -85,83 +85,80 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-    <title>ID Card Printer</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <title>ID Card Printer</title>
 
 </head>
 
 <body>
 
 
-    <!-- Edit Modal -->
-    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="editModalLabel">Edit Card</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <form method="POST">
-                    <div class="modal-body">
-                        <input type="hidden" name="snoEdit" id="snoEdit">
-                        <div class="form-group">
-                            <label for="name">Employee Name</label>
-                            <input type="text" class="form-control" id="nameEdit" name="nameEdit">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="desc">ID Card Number:</label>
-                            <input class="form-control" id="id_noEdit" name="id_noEdit" rows="3"></input>
-                        </div>
-                    </div>
-                    <div class="modal-footer d-block mr-auto">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Save changes</button>
-                    </div>
-                </form>
-            </div>
+  <!-- Edit Modal -->
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editModalLabel">Edit Card</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
         </div>
+        <form method="POST">
+          <div class="modal-body">
+            <input type="hidden" name="snoEdit" id="snoEdit">
+            <div class="form-group">
+              <label for="name">Employee Name</label>
+              <input type="text" class="form-control" id="nameEdit" name="nameEdit">
+            </div>
+
+            <div class="form-group">
+              <label for="desc">ID Card Number:</label>
+              <input class="form-control" id="id_noEdit" name="id_noEdit" rows="3"></input>
+            </div>
+          </div>
+          <div class="modal-footer d-block mr-auto">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 
-    <!-- Navigation bar start  -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background: black;">
-        <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="50px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+  <!-- Navigation bar start  -->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background: black;">
+    <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <!-- <li class="nav-item">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- <li class="nav-item">
                     <a class="nav-link" href="id-card.php">ID Card Genarator</a>
                 </li> -->
 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
+      </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
-        </div>
-    </nav>
-    <!-- Navigation bar end  -->
+            </form> -->
+    </div>
+  </nav>
+  <!-- Navigation bar end  -->
 
-    <?php
+  <?php
   if ($insert) {
     echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
     <strong>Success!</strong> Your Card has been inserted successfully
@@ -172,7 +169,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   ?>
 
-    <?php
+  <?php
   if ($delete) {
     echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
     <strong>Success!</strong> Your Card has been deleted successfully
@@ -182,7 +179,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   </div>";
   }
   ?>
-    <?php
+  <?php
   if ($update) {
     echo "<div class='alert alert-success alert-dismissible fade show' role='alert'>
     <strong>Success!</strong> Your Card has been updated successfully
@@ -193,7 +190,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   ?>
 
-    <?php
+  <?php
   if ($empty) {
     echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
     <strong>Error!</strong> The Fields Cannot Be Empty! Please Give Some Values.
@@ -204,7 +201,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   ?>
 
-    <?php
+  <?php
   if ($already_card) {
     echo "<div class='alert alert-warning alert-dismissible fade show' role='alert'>
     <strong>Error!</strong> This Card is Already Added.
@@ -215,93 +212,100 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   }
   ?>
 
-    <div class="container my-4">
-        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
-            aria-expanded="false" aria-controls="collapseExample">
-            <i class="fa fa-plus"></i> Add New Card
-        </button>
-        <a href="id-card.php" class="btn btn-primary">
-            <i class="fa fa-address-card"></i> Generate ID Card
-        </a>
-        </p>
-        <div class="collapse" id="collapseExample">
-            <div class="card card-body">
+  <div class="container my-4">
+    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <i class="fa fa-plus"></i> Add New Card
+    </button>
+    <a href="id-card.php" class="btn btn-primary">
+      <i class="fa fa-address-card"></i> Generate ID Card
+    </a>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
 
-                <form method="POST" enctype="multipart/form-data">
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">Employee Name</label>
-                            <input type="text" name="name" class="form-control" id="inputCity">
-                        </div>
-
-                        <div class="form-group col-md-4">
-                            <label for="inputState">Position / Role</label>
-                            <select name="grade" class="form-control">
-                                <option selected>Choose...</option>
-                                <option value="1st">1st</option>
-                                <option value="2nd">2nd</option>
-                                <option value="3rd">3rd</option>
-                                <option value="4th">4th</option>
-                                <option value="5th">5th</option>
-                                <option value="6th">6th</option>
-                                <option value="7th">7th</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Date Of Birth</label>
-                            <input type="date" name="dob" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputCity">Address</label>
-                            <input type="text" name="address" class="form-control">
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="inputState">Email Id</label>
-                            <input type="text" name="email" class="form-control">
-                        </div>
-                        <div class="form-group col-md-2">
-                            <label for="inputZip">Signature [WIP]</label>
-                            <input type="date" name="exp_date" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group col-md-3">
-                            <label for="id_no">ID Card No.</label>
-                            <input class="form-control" id="id_no" name="id_no"></input>
-                        </div>
-                        <div class="form-group col-md-3">
-                            <label for="phone">Phone No.</label>
-                            <input class="form-control" id="phone" name="phone"></input>
-                        </div>
-                        <div class="form-group col-md-4">
-                            <label for="photo">Photo</label>
-                            <input type="file" name="image" />
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add Card</button>
-                </form>
+        <form method="POST" enctype="multipart/form-data">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Employee Name</label>
+              <input type="text" name="name" class="form-control" id="inputCity">
             </div>
-        </div>
 
-        <div class="container my-4">
+            <div class="form-group col-md-4">
+              <label for="inputState">Designation / Role</label>
+              <select name="grade" class="form-control">
+                <option selected>Choose...</option>
+                <option value="1st">1st</option>
+                <option value="2nd">2nd</option>
+                <option value="3rd">3rd</option>
+                <option value="4th">4th</option>
+                <option value="5th">5th</option>
+                <option value="6th">6th</option>
+                <option value="7th">7th</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Date Of Birth</label>
+              <input type="date" name="dob" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="inputCity">Address</label>
+              <input type="text" name="address" class="form-control">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="inputState">Email Id</label>
+              <input type="text" name="email" class="form-control">
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Join Date</label>
+              <input type="date" name="join_date" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="id_no">ID Card No.</label>
+              <input class="form-control" id="id_no" name="id_no"></input>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="blood">Blood Type</label>
+              <input class="form-control" id="blood" name="blood"></input>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="phone">Phone No.</label>
+              <input class="form-control" id="phone" name="phone"></input>
+            </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Expire Date</label>
+              <input type="date" name="exp_date" class="form-control">
+            </div>
+            <div class="form-group col-md-4">
+              <label for="photo">Photo</label>
+              <input type="file" name="image" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa fa-plus"></i> Add Card</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container my-4">
 
 
-            <table class="table" id="myTable">
-                <thead>
-                    <tr>
-                        <th scope="col">E.No</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">ID Card No.</th>
-                        <th scope="col">Actions</th>
-                    </tr>
-                </thead>
+      <table class="table" id="myTable">
+        <thead>
+          <tr>
+            <th scope="col">E.No</th>
+            <th scope="col">Name</th>
+            <th scope="col">ID Card No.</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
 
-                <tbody>
-                    <?php
+        <tbody>
+          <?php
           $sql = "SELECT * FROM `cards` order by 1 DESC";
           $result = mysqli_query($conn, $sql);
           $sno = 0;
@@ -317,62 +321,59 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           ?>
 
 
-                </tbody>
-            </table>
-        </div>
-        <hr>
+        </tbody>
+      </table>
+    </div>
+    <hr>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-        </script>
-        <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('#myTable').DataTable();
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#myTable').DataTable();
 
-        });
-        </script>
-        <script>
-        edits = document.getElementsByClassName('edit');
-        Array.from(edits).forEach((element) => {
-            element.addEventListener("click", (e) => {
-                console.log("edit ");
-                tr = e.target.parentNode.parentNode;
-                name = tr.getElementsByTagName("td")[0].innerText;
-                id_no = tr.getElementsByTagName("td")[1].innerText;
-                console.log(name, id_no);
-                nameEdit.value = name;
-                id_noEdit.value = id_no;
-                snoEdit.value = e.target.id;
-                console.log(e.target.id)
-                $('#editModal').modal('toggle');
-            })
+      });
+    </script>
+    <script>
+      edits = document.getElementsByClassName('edit');
+      Array.from(edits).forEach((element) => {
+        element.addEventListener("click", (e) => {
+          console.log("edit ");
+          tr = e.target.parentNode.parentNode;
+          name = tr.getElementsByTagName("td")[0].innerText;
+          id_no = tr.getElementsByTagName("td")[1].innerText;
+          console.log(name, id_no);
+          nameEdit.value = name;
+          id_noEdit.value = id_no;
+          snoEdit.value = e.target.id;
+          console.log(e.target.id)
+          $('#editModal').modal('toggle');
         })
+      })
 
-        deletes = document.getElementsByClassName('delete');
-        Array.from(deletes).forEach((element) => {
-            element.addEventListener("click", (e) => {
-                console.log("edit ");
-                sno = e.target.id.substr(1);
+      deletes = document.getElementsByClassName('delete');
+      Array.from(deletes).forEach((element) => {
+        element.addEventListener("click", (e) => {
+          console.log("edit ");
+          sno = e.target.id.substr(1);
 
-                if (confirm("Are you sure you want to delete this note!")) {
-                    console.log("yes");
-                    window.location = `index.php?delete=${sno}`;
-                    // TODO: Create a form and use post request to submit a form
-                } else {
-                    console.log("no");
-                }
-            })
+          if (confirm("Are you sure you want to delete this note!")) {
+            console.log("yes");
+            window.location = `index.php?delete=${sno}`;
+            // TODO: Create a form and use post request to submit a form
+          } else {
+            console.log("no");
+          }
         })
-        </script>
+      })
+    </script>
 </body>
 
 
