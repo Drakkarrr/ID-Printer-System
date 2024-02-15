@@ -33,7 +33,8 @@ CREATE TABLE `cards` (
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `exp_date` varchar(20) DEFAULT NULL,
   
-  `image` varchar(255) NOT NULL
+  `image` varchar(255) NOT NULL,
+  `signature` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
