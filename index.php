@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   } else {
     $name = $_POST["name"];
     $id_no = $_POST["id_no"];
-    $grade = $_POST['grade'];
+    $role = $_POST['role'];
     $dob = $_POST['dob'];
     $address = $_POST['address'];
     $email = $_POST['email'];
@@ -64,7 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
           echo "Possible file upload attack!\n";
         }
         // Sql query to be executed
-        $sql = "INSERT INTO `cards`(`name`, `id_no`, `email`, `phone`, `address`, `dob`, `exp_date`, `blood`, `image`) VALUES ('$name','$id_no','$email]','$phone','$address','$dob','$exp_date','$blood','$uploadfile')";
+        $sql = "INSERT INTO `cards`(`name`, `id_no`, `role`, `email`, `phone`, `blood`,`address`, `dob`, `exp_date`,  `image`) VALUES ('$name','$id_no','$role','$email','$phone','$blood','$address','$dob','$exp_date','$uploadfile')";
 
         $result = mysqli_query($conn, $sql);
 
@@ -233,7 +233,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
             <div class="form-group col-md-4">
               <label for="inputState">Designation / Role</label>
-              <select name="grade" class="form-control">
+              <select name="role" class="form-control">
                 <option selected>Choose...</option>
                 <option value="1st">1st</option>
                 <option value="2nd">2nd</option>
@@ -275,14 +275,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
               <label for="phone">Phone No.</label>
               <input class="form-control" id="phone" name="phone"></input>
             </div>
-            <div class="form-group col-md-2">
-              <label for="inputZip">Expire Date</label>
-              <input type="date" name="exp_date" class="form-control">
-            </div>
             <div class="form-group col-md-4">
               <label for="blood">Blood Type</label>
               <input class="form-control" id="blood" name="blood"></input>
             </div>
+            <div class="form-group col-md-2">
+              <label for="inputZip">Expire Date</label>
+              <input type="date" name="exp_date" class="form-control">
+            </div>
+
             <div class="form-group col-md-4">
               <label for="photo">Photo</label>
               <input type="file" name="image" />
