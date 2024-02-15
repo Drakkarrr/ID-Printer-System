@@ -26,12 +26,12 @@ CREATE TABLE `cards` (
   `grade` varchar(10) DEFAULT NULL,
   `id_no` varchar(15) DEFAULT NULL,
   `email` varchar(40) DEFAULT NULL,
-  `blood` varchar(10) DEFAULT NULL,
   `phone` varchar(12) DEFAULT NULL,
   `address` varchar(100) DEFAULT NULL,
   `dob` varchar(20) DEFAULT NULL,
   `date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `exp_date` varchar(20) DEFAULT NULL,
+  `blood` varchar(10) DEFAULT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
