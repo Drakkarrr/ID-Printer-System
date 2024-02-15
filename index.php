@@ -335,7 +335,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <th scope='row'>" . $sno . "</th>
             <td>" . $row['name'] . "</td>
             <td>" . $row['id_no'] . "</td>
-            <td> <button class='edit btn btn-sm btn-primary' id=" . $row['sno'] . ">Edit</button> <button class='delete btn btn-sm btn-primary' id=d" . $row['sno'] . ">Delete</button>  </td>
+            <td> <button class='edit btn btn-sm btn-primary' id=" . $row['sno'] . ">Edit</button> <button class='delete btn btn-sm btn-danger' id=d" . $row['sno'] . ">Delete</button>  </td>
           </tr>";
           }
           ?>
