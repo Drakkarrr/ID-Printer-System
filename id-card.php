@@ -19,7 +19,7 @@ if (isset($_POST['search'])) {
 
             $name = $row["name"];
             $id_no = $row["id_no"];
-            $grade = $row['grade'];
+            $role = $row['role'];
             $dob = $row['dob'];
             $address = $row['address'];
             $email = $row['email'];
@@ -84,7 +84,7 @@ if (isset($_POST['search'])) {
                                                       <div class='sign'>
                                                           <br>
                                                           <p style='font-size:12px;    margin-bottom: 8px;'>Your Signature</p>
-                                                        <p style='font-family: Dancing Script'>Code Camp BD</p>
+                                                        <p style='font-family: Dancing Script'>ResponsivCode Technology Solutions</p>
 
                                                       </div>
                                                   </div>
@@ -105,8 +105,7 @@ if (isset($_POST['search'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/dashboard.css">
 
@@ -121,243 +120,243 @@ if (isset($_POST['search'])) {
 
 
     <style>
-    body {
-        font-family: 'arial';
-    }
+        body {
+            font-family: 'arial';
+        }
 
-    .lavkush img {
-        border-radius: 8px;
-        border: 2px solid blue;
-    }
+        .lavkush img {
+            border-radius: 8px;
+            border: 2px solid blue;
+        }
 
-    span {
+        span {
 
-        font-family: 'Orbitron', sans-serif;
-        font-size: 16px;
-    }
+            font-family: 'Orbitron', sans-serif;
+            font-size: 16px;
+        }
 
-    hr.new2 {
-        border-top: 1px dashed black;
-        width: 350px;
-        text-align: left;
-        align-items: left;
-    }
+        hr.new2 {
+            border-top: 1px dashed black;
+            width: 350px;
+            text-align: left;
+            align-items: left;
+        }
 
-    /* second id card  */
-    p {
-        font-size: 13px;
-        margin-top: -5px;
-    }
-
-
-    .container {
-        width: 80vh;
-        height: 45vh;
-        margin: auto;
-        background-color: white;
-        box-shadow: 0 1px 10px rgb(146 161 176 / 50%);
-        overflow: hidden;
-        border-radius: 10px;
-    }
-
-    .header {
-        /* border: 2px solid black; */
-        width: 73vh;
-        height: 15vh;
-        margin: 20px auto;
-        background-color: white;
-        /* box-shadow: 0 1px 10px rgb(146 161 176 / 50%); */
-        /* border-radius: 10px; */
-        background-image: url(assets/images/Code_Camp_BD.png);
-        overflow: hidden;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .header h1 {
-        color: rgb(90 139 249);
-        text-align: right;
-        margin-right: 20px;
-        margin-top: 15px;
-    }
-
-    .header p {
-        color: rgb(157, 51, 0);
-        text-align: right;
-        margin-right: 22px;
-        margin-top: -10px;
-    }
-
-    .container-2 {
-        /* border: 2px solid red; */
-        width: 73vh;
-        height: 10vh;
-        margin: 0px auto;
-        margin-top: -20px;
-        display: flex;
-    }
-
-    .box-1 {
-        border: 4px solid #fff;
-        width: 90px;
-        height: 95px;
-        margin: -40px 25px;
-        border-radius: 3px;
-    }
-
-    .box-1 img {
-        width: 82px;
-        height: 87px;
-    }
-
-    .box-2 {
-        /* border: 2px solid purple; */
-        width: 33vh;
-        height: 8vh;
-        margin: 7px 0px;
-        padding: 5px 7px 0px 0px;
-        text-align: left;
-        font-family: 'Poppins', sans-serif;
-    }
-
-    .box-2 h2 {
-        font-size: 1.3rem;
-        margin-top: -5px;
-        color: rgb(90 139 249);
-        ;
-    }
-
-    .box-2 p {
-        font-size: 0.7rem;
-        margin-top: -5px;
-        color: rgb(179, 116, 0);
-    }
-
-    .box-3 {
-        /* border: 2px solid rgb(21, 255, 0); */
-        width: 8vh;
-        height: 8vh;
-        margin: 8px 0px 8px 30px;
-    }
+        /* second id card  */
+        p {
+            font-size: 13px;
+            margin-top: -5px;
+        }
 
 
-    .box-3 img {
-        width: 8vh;
-    }
+        .container {
+            width: 80vh;
+            height: 45vh;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 1px 10px rgb(146 161 176 / 50%);
+            overflow: hidden;
+            border-radius: 10px;
+        }
 
-    .container-3 {
-        /* border: 2px solid rgb(111, 2, 161); */
-        width: 73vh;
-        height: 12vh;
-        margin: 0px auto;
-        margin-top: 10px;
-        display: flex;
-        font-family: 'Shippori Antique B1', sans-serif;
-        font-size: 0.7rem;
-    }
+        .header {
+            /* border: 2px solid black; */
+            width: 73vh;
+            height: 15vh;
+            margin: 20px auto;
+            background-color: white;
+            /* box-shadow: 0 1px 10px rgb(146 161 176 / 50%); */
+            /* border-radius: 10px; */
+            background-image: url(assets/images/Code_Camp_BD.png);
+            overflow: hidden;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    .info-1 {
-        /* border: 1px solid rgb(255, 38, 0); */
-        width: 17vh;
-        height: 12vh;
-    }
+        .header h1 {
+            color: rgb(90 139 249);
+            text-align: right;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
 
-    .id {
-        /* border: 1px solid rgb(2, 92, 17); */
-        width: 17vh;
-        height: 5vh;
-    }
+        .header p {
+            color: rgb(157, 51, 0);
+            text-align: right;
+            margin-right: 22px;
+            margin-top: -10px;
+        }
 
-    .id h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
+        .container-2 {
+            /* border: 2px solid red; */
+            width: 73vh;
+            height: 10vh;
+            margin: 0px auto;
+            margin-top: -20px;
+            display: flex;
+        }
 
-    .dob {
-        /* border: 1px solid rgb(0, 46, 105); */
-        width: 17vh;
-        height: 5vh;
-        margin: 8px 0px 0px 0px;
-    }
+        .box-1 {
+            border: 4px solid #fff;
+            width: 90px;
+            height: 95px;
+            margin: -40px 25px;
+            border-radius: 3px;
+        }
 
-    .dob h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
+        .box-1 img {
+            width: 82px;
+            height: 87px;
+        }
 
-    .info-2 {
-        /* border: 1px solid rgb(4, 0, 59); */
-        width: 17vh;
-        height: 12vh;
-    }
+        .box-2 {
+            /* border: 2px solid purple; */
+            width: 33vh;
+            height: 8vh;
+            margin: 7px 0px;
+            padding: 5px 7px 0px 0px;
+            text-align: left;
+            font-family: 'Poppins', sans-serif;
+        }
 
-    .join-date {
-        /* border: 1px solid rgb(2, 92, 17); */
-        width: 17vh;
-        height: 5vh;
-    }
+        .box-2 h2 {
+            font-size: 1.3rem;
+            margin-top: -5px;
+            color: rgb(90 139 249);
+            ;
+        }
 
-    .join-date h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
+        .box-2 p {
+            font-size: 0.7rem;
+            margin-top: -5px;
+            color: rgb(179, 116, 0);
+        }
 
-    .expire-date {
-        /* border: 1px solid rgb(0, 46, 105); */
-        width: 17vh;
-        height: 5vh;
-        margin: 8px 0px 0px 0px;
-    }
-
-    .expire-date h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
-
-    .info-3 {
-        /* border: 1px solid rgb(255, 38, 0); */
-        width: 17vh;
-        height: 12vh;
-    }
-
-    .email {
-        /* border: 1px solid rgb(2, 92, 17); */
-        width: 22vh;
-        height: 5vh;
-    }
+        .box-3 {
+            /* border: 2px solid rgb(21, 255, 0); */
+            width: 8vh;
+            height: 8vh;
+            margin: 8px 0px 8px 30px;
+        }
 
 
-    .email h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
+        .box-3 img {
+            width: 8vh;
+        }
 
-    .phone {
-        /* border: 1px solid rgb(0, 46, 105); */
-        width: 17vh;
-        height: 5vh;
-        margin: 8px 0px 0px 0px;
-    }
+        .container-3 {
+            /* border: 2px solid rgb(111, 2, 161); */
+            width: 73vh;
+            height: 12vh;
+            margin: 0px auto;
+            margin-top: 10px;
+            display: flex;
+            font-family: 'Shippori Antique B1', sans-serif;
+            font-size: 0.7rem;
+        }
 
-    .info-4 {
-        /* border: 2px solid rgb(255, 38, 0); */
-        width: 22vh;
-        height: 12vh;
-        margin: 0px 0px 0px 0px;
-        font-size: 15px;
-    }
+        .info-1 {
+            /* border: 1px solid rgb(255, 38, 0); */
+            width: 17vh;
+            height: 12vh;
+        }
 
-    .phone h4 {
-        color: rgb(90 139 249);
-        font-size: 15px;
-    }
+        .id {
+            /* border: 1px solid rgb(2, 92, 17); */
+            width: 17vh;
+            height: 5vh;
+        }
 
-    .sign {
-        /* border: 1px solid rgb(0, 46, 105); */
-        width: 17vh;
-        height: 5vh;
-        margin: 41px 0px 0px 20px;
-        text-align: center;
-    }
+        .id h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .dob {
+            /* border: 1px solid rgb(0, 46, 105); */
+            width: 17vh;
+            height: 5vh;
+            margin: 8px 0px 0px 0px;
+        }
+
+        .dob h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .info-2 {
+            /* border: 1px solid rgb(4, 0, 59); */
+            width: 17vh;
+            height: 12vh;
+        }
+
+        .join-date {
+            /* border: 1px solid rgb(2, 92, 17); */
+            width: 17vh;
+            height: 5vh;
+        }
+
+        .join-date h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .expire-date {
+            /* border: 1px solid rgb(0, 46, 105); */
+            width: 17vh;
+            height: 5vh;
+            margin: 8px 0px 0px 0px;
+        }
+
+        .expire-date h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .info-3 {
+            /* border: 1px solid rgb(255, 38, 0); */
+            width: 17vh;
+            height: 12vh;
+        }
+
+        .email {
+            /* border: 1px solid rgb(2, 92, 17); */
+            width: 22vh;
+            height: 5vh;
+        }
+
+
+        .email h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .phone {
+            /* border: 1px solid rgb(0, 46, 105); */
+            width: 17vh;
+            height: 5vh;
+            margin: 8px 0px 0px 0px;
+        }
+
+        .info-4 {
+            /* border: 2px solid rgb(255, 38, 0); */
+            width: 22vh;
+            height: 12vh;
+            margin: 0px 0px 0px 0px;
+            font-size: 15px;
+        }
+
+        .phone h4 {
+            color: rgb(90 139 249);
+            font-size: 15px;
+        }
+
+        .sign {
+            /* border: 1px solid rgb(0, 46, 105); */
+            width: 17vh;
+            height: 5vh;
+            margin: 41px 0px 0px 20px;
+            text-align: center;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.js"></script>
 </head>
@@ -367,8 +366,7 @@ if (isset($_POST['search'])) {
     <!-- Navigation bar start  -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: black;">
         <a class="navbar-brand" href="#"><img src="assets/images/logo.png" width="50px"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -402,8 +400,7 @@ if (isset($_POST['search'])) {
                         <small id="emailHelp" class="form-text text-muted">Every employee should have unique Id
                             no.</small>
                         <br>
-                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"
-                            name="search">Generate</button>
+                        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit" name="search">Generate</button>
                     </form>
                 </div>
             </div>
@@ -426,45 +423,42 @@ if (isset($_POST['search'])) {
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
         </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
         </script>
 
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
         </script>
 
         <script>
-        function downloadtable() {
+            function downloadtable() {
 
-            var node = document.getElementById('mycard');
+                var node = document.getElementById('mycard');
 
-            domtoimage.toPng(node)
-                .then(function(dataUrl) {
-                    var img = new Image();
-                    img.src = dataUrl;
-                    downloadURI(dataUrl, "ccbd-id-card.png")
-                })
-                .catch(function(error) {
-                    console.error('oops, something went wrong', error);
-                });
+                domtoimage.toPng(node)
+                    .then(function(dataUrl) {
+                        var img = new Image();
+                        img.src = dataUrl;
+                        downloadURI(dataUrl, "ccbd-id-card.png")
+                    })
+                    .catch(function(error) {
+                        console.error('oops, something went wrong', error);
+                    });
 
-        }
+            }
 
 
 
-        function downloadURI(uri, name) {
-            var link = document.createElement("a");
-            link.download = name;
-            link.href = uri;
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            delete link;
-        }
+            function downloadURI(uri, name) {
+                var link = document.createElement("a");
+                link.download = name;
+                link.href = uri;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                delete link;
+            }
         </script>
 </body>
 
