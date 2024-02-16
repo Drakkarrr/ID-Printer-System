@@ -294,14 +294,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <input type="date" name="exp_date" class="form-control">
                         </div>
 
-                        <div class="form-group col-md-4">
-                            <label for="photo">Photo</label>
-                            <input type="file" name="image" />
-                        </div>
+                        <div class='form-group col-md-6'>
+                            <div class="form-group col-md-6">
+                                <label for="photo">Photo</label>
+                                <input type="file" name="image" />
+                            </div>
 
-                        <div class="form-group col-md-4">
-                            <label for="photo">Signature</label>
-                            <input type="file" name="signature" />
+                            <div class="form-group col-md-5">
+                                <label for="photo">Signature</label>
+                                <input type="file" name="signature" />
+                            </div>
                         </div>
 
 
