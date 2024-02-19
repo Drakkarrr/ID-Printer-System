@@ -41,7 +41,12 @@ if (isset($_POST['search'])) {
                                                   <div class='box-1'>
                                                   <img src='$image'/>
                                                   </div>
+                                                  
+                                                
+                                                
+
                                                   <div class='box-2'>
+                                                  <br>
                                                       <h2>$name</h2>
                                                       <p style='font-size: 14px; color: black'>Web Developer</p>
                                                       
@@ -252,8 +257,10 @@ if (isset($_POST['search'])) {
 
 
     .box-1 img {
-        width: 82px;
-        height: 87px;
+        width: 105px;
+        height: 120px;
+        padding-right: 10px;
+
     }
 
     .box-duplicate img {
