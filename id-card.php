@@ -12,14 +12,14 @@ if (isset($_POST['search'])) {
 
 
     if (mysqli_num_rows($result) > 0) {
-        $html = "<div class='card' style='width:350px; padding:0;' >";
+        $html = "<div class='card' style='width:100%; padding:0;' >";
 
         $html .= "";
         while ($row = mysqli_fetch_assoc($result)) {
 
             $name = $row["name"];
             $id_no = $row["id_no"];
-            $grade = $row['grade'];
+            $role = $row['role'];
             $dob = $row['dob'];
             $address = $row['address'];
             $email = $row['email'];
@@ -28,10 +28,11 @@ if (isset($_POST['search'])) {
             $address = $row['address'];
             $image = $row['image'];
             $date = date('M d, Y', strtotime($row['date']));
+            $signature = $row['signature'];
+            $blood = $row['blood'];
 
 
             $html .= "
-                                        <!-- second id card  -->
                                         <div class='container' style='text-align:left; border:2px dotted black;'>
                                               <div class='header'>
                                                 
@@ -41,9 +42,17 @@ if (isset($_POST['search'])) {
                                                   <div class='box-1'>
                                                   <img src='$image'/>
                                                   </div>
+                                                  
+                                                
+                                                
+
                                                   <div class='box-2'>
+                                                  <br>
                                                       <h2>$name</h2>
                                                       <p style='font-size: 14px; color: black'>Web Developer</p>
+                                                      
+                                                      <h2>ID No</h2>
+                                                          <p>$id_no</p>
                                                   </div>
                                                   <div class='box-3'>
                                                       <img src='assets/images/logo.png' alt=''>
@@ -53,48 +62,95 @@ if (isset($_POST['search'])) {
                                               <div class='container-3'>
                                                   <div class='info-1'>
                                                       <div class='id'>
-                                                          <h4>ID No</h4>
-                                                          <p>$id_no</p>
+                                                          
                                                       </div>
-                                  
-                                                      <div class='dob'>
-                                                          <h4>Phone</h4>
-                                                          <p>$phone</p>
-                                                      </div>
+                                                </div>
+                                              
+                                                    
                                 
-                                                  </div>
-                                                  <div class='info-2'>
-                                                      <div class='join-date'>
-                                                          <h4>Joined Date</h4>
-                                                          <p>$date</p>
-                                                      </div>
-                                                      <div class='expire-date'>
-                                                          <h4>Expire Date</h4>
-                                                          <p>$exp_date</p>
-                                                      </div>
-                                                  </div>
-                                                  <div class='info-3'>
-                                                      <div class='email'>
-                                                          <h4>Address</h4>
-                                                          <p>$address this is the final long address</p>
-                                                      </div>
-                                                      
-                                                  </div>
+                                                  
+                                            
                                                   <div class='info-4'>
                                                       <div class='sign'>
-                                                          <br>
-                                                          <p style='font-size:12px;    margin-bottom: 8px;'>Your Signature</p>
-                                                        <p style='font-family: Dancing Script'>Code Camp BD</p>
-
+                                                          <p style='font-size:12px;    margin-bottom: 8px;'> Signature $signature</p>
                                                       </div>
                                                   </div>
-                                                  <!-- id card end -->
-                                        ";
-        }
-    }
-}
+                                                </div>
+                                                </div>
+                                                
 
-?>
+                                                  <br/>
+                                                  
+                                                 <!-- back ID card --> 
+                                                  <div class='container' style='text-align:left; border:2px dotted black;'>
+                                                  <div class='header'>
+                                                    
+                                                  </div>
+                                      
+                                                  <div class='container-2'>
+                                                     
+                                                      
+                                                    
+                                                  </div>
+                                      
+                                                  <div class='container-duplicate3'>
+                                                      <div class='info-1'>
+                                                         
+                                      
+                                                          <div class='dob'>
+                                                              <h4>Phone</h4>
+                                                              <p>$phone</p>
+                                                              <h4>Date of Birth</h4>
+                                                              <p>$dob</p>
+                                                              
+                                                          </div>
+                                    
+                                                      </div>
+                                                      
+                                                      
+                                                      
+                                                
+
+                                                    <div class='info-1'>
+                                                         
+                                      
+                                                    <div class='dob'>
+                                                        <h4>Joined Date</h4>
+                                                        <p>$date</p>
+                                                        <h4>Expiry Date</h4>
+                                                        <p>$exp_date</p>
+                                                        
+                                                    </div>
+                              
+                                                </div>
+
+
+                                                
+                                                      <div class='info-1'>
+                                                          <div class='dob'>
+                                                              <h4>Address</h4>
+                                                              <p>$address</p>
+                                                              <h4>Blood Type</h4>
+                                                              <p>$blood</p>
+                                                          </div>
+                                                          
+                                                      </div>
+                                                      <div class='info-4'>
+                                                          <div class='sign2'>
+                                                              <p style='font-size:12px;    margin-bottom: 8px;'> Signature $signature
+                                                              </p>
+                                                          </div>
+                                                      </div>  
+                                                  ";
+                                                  
+                                                  
+                                                }
+                                            }
+                                        }
+                                        
+                                        ?>
+
+
 
 <!doctype html>
 <html lang="en">
@@ -112,7 +168,7 @@ if (isset($_POST['search'])) {
 
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
-    <title>Card Generation | Code Camp BD <?php echo date("Y") ?></title>
+    <title>ID Printer <?php echo date("Y") ?></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap" rel="stylesheet">
@@ -169,6 +225,8 @@ if (isset($_POST['search'])) {
         /* box-shadow: 0 1px 10px rgb(146 161 176 / 50%); */
         /* border-radius: 10px; */
         background-image: url(assets/images/Code_Camp_BD.png);
+        background-position: top;
+        background-size: cover;
         overflow: hidden;
         font-family: 'Poppins', sans-serif;
     }
@@ -200,11 +258,27 @@ if (isset($_POST['search'])) {
         border: 4px solid #fff;
         width: 90px;
         height: 95px;
+        margin: 10px 25px;
+        border-radius: 3px;
+    }
+
+    .box-duplicate {
+        border: 4px solid #fff;
+        width: 90px;
+        height: 95px;
         margin: -40px 25px;
         border-radius: 3px;
     }
 
+
+
     .box-1 img {
+        width: 105px;
+        height: 120px;
+        padding-right: 10px;
+    }
+
+    .box-duplicate img {
         width: 82px;
         height: 87px;
     }
@@ -255,9 +329,20 @@ if (isset($_POST['search'])) {
         font-size: 0.7rem;
     }
 
+    .container-duplicate3 {
+        /* border: 2px solid rgb(111, 2, 161); */
+        width: 73vh;
+        height: 12vh;
+        margin: 0px auto;
+        margin-top: -50px;
+        display: flex;
+        font-family: 'Shippori Antique B1', sans-serif;
+        font-size: 0.7rem;
+    }
+
     .info-1 {
         /* border: 1px solid rgb(255, 38, 0); */
-        width: 17vh;
+        width: 20vh;
         height: 12vh;
     }
 
@@ -355,7 +440,15 @@ if (isset($_POST['search'])) {
         /* border: 1px solid rgb(0, 46, 105); */
         width: 17vh;
         height: 5vh;
-        margin: 41px 0px 0px 20px;
+        margin: 41px 0px 0px 200px;
+        text-align: center;
+    }
+
+    .sign2 {
+        /* border: 1px solid rgb(0, 46, 105); */
+        width: 17vh;
+        height: 5vh;
+        margin: 50px 0px 0px 30px;
         text-align: center;
     }
     </style>
@@ -381,10 +474,10 @@ if (isset($_POST['search'])) {
                     <a class="nav-link" href="id-card.php">ID Genarator</a>
                 </li> -->
             </ul>
-            <form class="form-inline my-2 my-lg-0">
+            <!-- <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            </form> -->
         </div>
     </nav>
 
@@ -422,7 +515,7 @@ if (isset($_POST['search'])) {
         </div>
 
         <hr>
-        <button id="demo" class="downloadtable btn btn-primary" onclick="downloadtable()"> Download Id Card</button>
+        <button id="demo" class="downloadtable btn btn-primary" onclick="downloadtable()"> Print Id Card</button>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
