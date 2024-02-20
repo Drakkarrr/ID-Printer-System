@@ -12,7 +12,7 @@ if (isset($_POST['search'])) {
 
 
     if (mysqli_num_rows($result) > 0) {
-        $html = "<div class='card' style='width:350px; padding:0;' >";
+        $html = "<div class='card' style='width:100%; padding:0;' >";
 
         $html .= "";
         while ($row = mysqli_fetch_assoc($result)) {
