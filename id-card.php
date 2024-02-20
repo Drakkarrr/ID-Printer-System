@@ -92,28 +92,41 @@ if (isset($_POST['search'])) {
                                                     
                                                   </div>
                                       
-                                                  <div class='container-3'>
+                                                  <div class='container-duplicate3'>
                                                       <div class='info-1'>
                                                          
                                       
                                                           <div class='dob'>
                                                               <h4>Phone</h4>
                                                               <p>$phone</p>
+                                                              <h4>Date of Birth</h4>
+                                                              <p>$dob</p>
+                                                              
                                                           </div>
                                     
                                                       </div>
-                                                      <div class='info-2'>
-                                                          <div class='join-date'>
-                                                              <h4>Joined Date</h4>
-                                                              <p>$date</p>
-                                                          </div>
-                                                          <div class='expire-date'>
-                                                              <h4>Expire Date</h4>
-                                                              <p>$exp_date</p>
-                                                          </div>
-                                                      </div>
-                                                      <div class='info-3'>
-                                                          <div class='email'>
+                                                      
+                                                      
+                                                      
+                                                
+
+                                                    <div class='info-1'>
+                                                         
+                                      
+                                                    <div class='dob'>
+                                                        <h4>Joined Date</h4>
+                                                        <p>$date</p>
+                                                        <h4>Expiry Date</h4>
+                                                        <p>$exp_date</p>
+                                                        
+                                                    </div>
+                              
+                                                </div>
+
+
+                                                
+                                                      <div class='info-1'>
+                                                          <div class='dob'>
                                                               <h4>Address</h4>
                                                               <p>$address</p>
                                                           </div>
@@ -260,7 +273,6 @@ if (isset($_POST['search'])) {
         width: 105px;
         height: 120px;
         padding-right: 10px;
-
     }
 
     .box-duplicate img {
@@ -309,6 +321,17 @@ if (isset($_POST['search'])) {
         height: 12vh;
         margin: 0px auto;
         margin-top: 10px;
+        display: flex;
+        font-family: 'Shippori Antique B1', sans-serif;
+        font-size: 0.7rem;
+    }
+
+    .container-duplicate3 {
+        /* border: 2px solid rgb(111, 2, 161); */
+        width: 73vh;
+        height: 12vh;
+        margin: 0px auto;
+        margin-top: -50px;
         display: flex;
         font-family: 'Shippori Antique B1', sans-serif;
         font-size: 0.7rem;
@@ -422,7 +445,7 @@ if (isset($_POST['search'])) {
         /* border: 1px solid rgb(0, 46, 105); */
         width: 17vh;
         height: 5vh;
-        margin: 41px 0px 0px 20px;
+        margin: 50px 0px 0px 30px;
         text-align: center;
     }
     </style>
