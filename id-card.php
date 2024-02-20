@@ -29,6 +29,7 @@ if (isset($_POST['search'])) {
             $image = $row['image'];
             $date = date('M d, Y', strtotime($row['date']));
             $signature = $row['signature'];
+            $blood = $row['blood'];
 
 
             $html .= "
@@ -80,7 +81,7 @@ if (isset($_POST['search'])) {
 
                                                   <br/>
                                                   
-                                                  
+                                                 <!-- back ID card --> 
                                                   <div class='container' style='text-align:left; border:2px dotted black;'>
                                                   <div class='header'>
                                                     
@@ -129,6 +130,8 @@ if (isset($_POST['search'])) {
                                                           <div class='dob'>
                                                               <h4>Address</h4>
                                                               <p>$address</p>
+                                                              <h4>Blood Type</h4>
+                                                              <p>$blood</p>
                                                           </div>
                                                           
                                                       </div>
