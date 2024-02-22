@@ -49,7 +49,7 @@ if (isset($_POST['search'])) {
                                                   <div class='box-2'>
                                                   <br>
                                                       <h2>$name</h2>
-                                                      <p style='font-size: 14px; color: black'>Web Developer</p>
+                                                      <p style='font-size: 14px; color: black'>Employee</p>
                                                       
                                                       <h2>ID No</h2>
                                                           <p>$id_no</p>
