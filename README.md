@@ -2,6 +2,12 @@
 
 ## ID Printer User Interface Preview
 
+![Landing Page](image.png)
+![Add new ID](image.png)
+![Generate ID Page](image.png)
+![Generated ID](image.png)
+
+![staff-id-card](https://user-images.githubusercontent.com/78216965/223390479-f3333371-0a9e-4919-b951-33af52a230d7.png)
 ![staff-id-card](https://user-images.githubusercontent.com/78216965/223390479-f3333371-0a9e-4919-b951-33af52a230d7.png)
 
 ![screencapture-localhost-student-Employee-ID-Card-Generator](https://user-images.githubusercontent.com/78216965/223391167-1e43436d-298b-471b-83dc-87c19618cc07.png)
