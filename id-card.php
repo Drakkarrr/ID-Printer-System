@@ -54,6 +54,7 @@ if (isset($_POST['search'])) {
                                                       <h2>ID No</h2>
                                                           <p>$id_no</p>
                                                   </div>
+                                                  
                                                   <div class='box-3'>
                                                       <img src='assets/images/logo.png' alt=''>
                                                   </div>
